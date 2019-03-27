@@ -20,27 +20,29 @@ const TemplateWrapper = ({ children }) => {
         />
         <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js" />
         <script>
-          {window.addEventListener("load", function() {
-            window.cookieconsent.initialise({
-              palette: {
-                popup: {
-                  background: "#3937a3",
-                },
-                button: {
-                  background: "#e62576",
-                },
-              },
-              theme: "classic",
-              position: "bottom-right",
-              content: {
-                message:
-                  "Strona wykorzystuje pliki cookies w celu prawidłowego jego działania, korzystania z wtyczek społecznościowych (Facebook, Twitter).",
-                dismiss: "Rozumiem",
-                link: "Dowiedz się więcej",
-                href: "jakisLink",
-              },
-            });
-          })}
+          {typeof window !== `undefined` &&
+            window.addEventListener("load", function() {
+              typeof window !== `undefined` &&
+                window.cookieconsent.initialise({
+                  palette: {
+                    popup: {
+                      background: "#3937a3",
+                    },
+                    button: {
+                      background: "#e62576",
+                    },
+                  },
+                  theme: "classic",
+                  position: "bottom-right",
+                  content: {
+                    message:
+                      "Strona wykorzystuje pliki cookies w celu prawidłowego jego działania, korzystania z wtyczek społecznościowych (Facebook, Twitter).",
+                    dismiss: "Rozumiem",
+                    link: "Dowiedz się więcej",
+                    href: "jakisLink",
+                  },
+                });
+            })}
         </script>
         <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png" />
         <link rel="icon" type="image/png" href="/img/favicon-32x32.png" sizes="32x32" />
