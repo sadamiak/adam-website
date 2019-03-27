@@ -4,13 +4,16 @@ import { graphql } from "gatsby";
 import Layout from "../components/Layout";
 import Content, { HTMLContent } from "../components/Content";
 import { TwitterTimelineEmbed } from "react-twitter-embed";
+import { FacebookProvider, Page } from "react-facebook";
 
 export const AboutPageTemplate = ({ title, content, contentComponent }) => {
   const PageContent = contentComponent || Content;
 
   return (
     <div>
-      <h1>Adam traczyk jest najpiękniejszy!</h1>
+      <div>
+      </div>
+      <h1 className="adam">Adam traczyk jest najpiękniejszy!</h1>
       <img src={"https://fundacjagloballab.files.wordpress.com/2016/10/panorama.png?w=620&h=342"} alt="Logo" />
       <TwitterTimelineEmbed
         sourceType="profile"
@@ -19,6 +22,9 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
         noScrollbar
         lang="pl"
       />
+      <FacebookProvider appId="519495091756536" language={"pl_PL"}>
+      <Page href="https://www.facebook.com/AdamTraczykWiosna/" tabs="timeline" width="400" height="400" small-header="false" adapt-container-width="true" hide-cover="false" show-facepile="true" />
+    </FacebookProvider>
     </div>
   );
 
