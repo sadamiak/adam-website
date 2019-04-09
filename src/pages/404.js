@@ -1,13 +1,23 @@
-import React from 'react'
-import Layout from '../components/Layout'
+import React from "react";
+import Layout from "../components/Layout";
+import styles from "../templates/styles.module.css";
 
 const NotFoundPage = () => (
   <Layout>
-    <div>
-      <h1>NOT FOUND</h1>
-      <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
+    <div className={styles.mainContainer}>
+      <article
+        className={styles.articleContainer}
+        style={{
+          flexDirection: `column`,
+          textAlign: `center`,
+          margin: 40,
+        }}
+      >
+        <h1>404</h1>
+        <p>Strona nie znaleziona</p>
+      </article>
     </div>
   </Layout>
-)
+);
 
-export default NotFoundPage
+export default NotFoundPage;

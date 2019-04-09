@@ -95,6 +95,9 @@ export const IndexPageTemplate = ({ image, title, heading, subheading, mainpitch
             </li>
             <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
           </ul>
+          <Link to="/program/" className={`${styles.button}`}>
+            Cały program
+          </Link>
         </section>
         <section className={`${styles.halfSection} ${styles.imageSection} ${styles.prioritiesPhoto}`} />
       </article>
