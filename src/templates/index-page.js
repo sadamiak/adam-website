@@ -3,98 +3,122 @@ import PropTypes from "prop-types";
 import { Link, graphql } from "gatsby";
 
 import Layout from "../components/Layout";
-import Features from "../components/Features";
 import BlogRoll from "../components/BlogRoll";
+import wiosnaCheck from "../img/wiosnaCheck.svg";
+import styles from "./styles.module.css";
 
 export const IndexPageTemplate = ({ image, title, heading, subheading, mainpitch, description, intro, main }) => (
   <div>
-    <div
-      className="full-width-image margin-top-0"
-      style={{
-        backgroundImage: `url(${!!image.childImageSharp ? image.childImageSharp.fluid.src : image})`,
-        backgroundPosition: `top left`,
-        backgroundAttachment: `fixed`,
-      }}
-    >
-      <div
-        style={{
-          display: "flex",
-          height: "150px",
-          lineHeight: "1",
-          justifyContent: "space-around",
-          alignItems: "left",
-          flexDirection: "column",
-        }}
-      >
-        <h1
-          className="has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen"
-          style={{
-            boxShadow: "rgb(255, 68, 0) 0.5rem 0px 0px, rgb(255, 68, 0) -0.5rem 0px 0px",
-            backgroundColor: "rgb(255, 68, 0)",
-            color: "white",
-            lineHeight: "1",
-            padding: "0.25em",
-          }}
-        >
-          {title}
-        </h1>
-        <h3
-          className="has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen"
-          style={{
-            boxShadow: "rgb(255, 68, 0) 0.5rem 0px 0px, rgb(255, 68, 0) -0.5rem 0px 0px",
-            backgroundColor: "rgb(255, 68, 0)",
-            color: "white",
-            lineHeight: "1",
-            padding: "0.25em",
-          }}
-        >
-          {subheading}
-        </h3>
-      </div>
-    </div>
-    <section className="section section--gradient">
-      <div className="container">
-        <div className="section">
-          <div className="columns">
-            <div className="column is-10 is-offset-1">
-              <div className="content">
-                <div className="content">
-                  <div className="tile">
-                    <h1 className="title">{mainpitch.title}</h1>
-                  </div>
-                  <div className="tile">
-                    <h3 className="subtitle">{mainpitch.description}</h3>
-                  </div>
-                </div>
-                <div className="columns">
-                  <div className="column is-12">
-                    <h3 className="has-text-weight-semibold is-size-2">{heading}</h3>
-                    <p>{description}</p>
-                  </div>
-                </div>
-                <Features gridItems={intro.blurbs} />
-                <div className="columns">
-                  <div className="column is-12 has-text-centered">
-                    <Link className="btn" to="/products">
-                      See all products
-                    </Link>
-                  </div>
-                </div>
-                <div className="column is-12">
-                  <h3 className="has-text-weight-semibold is-size-2">Latest stories</h3>
-                  <BlogRoll />
-                  <div className="column is-12 has-text-centered">
-                    <Link className="btn" to="/blog">
-                      Read more
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+    <div className={styles.mainContainer}>
+      <article className={styles.articleContainer}>
+        <section className={styles.halfSection}>
+          <h2>Kim jestem?</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tempor quis urna ultrices molestie. Duis
+            eu dapibus purus. Suspendisse potenti. Donec gravida felis sed lacus finibus, eu sollicitudin nunc pretium.
+            Quisque a neque et leo feugiat scelerisque. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+            posuere cubilia Curae; Sed quis venenatis nisl.
+          </p>
+          <p>
+            Aliquam egestas quam eget placerat sollicitudin. Maecenas pharetra fermentum cursus. Fusce sed rhoncus ex.
+            Sed convallis massa nibh, sollicitudin accumsan tortor condimentum porttitor. In quis condimentum dolor.
+            Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Phasellus pharetra
+            neque vel fringilla dignissim.
+          </p>
+          <Link to="/about/" className={`${styles.button}`}>
+            Pełna biografia
+          </Link>
+        </section>
+        <section className={`${styles.halfSection} ${styles.imageSection} ${styles.candidatePhoto}`} />
+      </article>
+      <div className={styles.spacerSection}>
+        <div>
+          <blockquote cite="https://www.huxley.net/bnw/four.html">
+            <p>Jakiś bardzo mądry cytat</p>
+          </blockquote>
+
+          <cite>– Mądra osoba, mądre dzieło</cite>
+          <img className={styles.wiosnaTick} src={wiosnaCheck} alt="Wiosna logo" />
         </div>
       </div>
-    </section>
+      <article className={styles.articleContainer}>
+        <section className={`${styles.halfSection} ${styles.imageSection} ${styles.wiosnaPhoto}`} />
+        <section className={styles.halfSection}>
+          <h2>
+            <span style={{ color: "#f48120" }}>Dlaczego</span>
+            <span style={{ color: "#40b36e" }}> Wiosna?</span>
+          </h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tempor quis urna ultrices molestie. Duis
+            eu dapibus purus. Suspendisse potenti. Donec gravida felis sed lacus finibus, eu sollicitudin nunc pretium.
+            Quisque a neque et leo feugiat scelerisque. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+            posuere cubilia Curae; Sed quis venenatis nisl.
+          </p>
+          <p>
+            Aliquam egestas quam eget placerat sollicitudin. Maecenas pharetra fermentum cursus. Fusce sed rhoncus ex.
+            Sed convallis massa nibh, sollicitudin accumsan tortor condimentum porttitor. In quis condimentum dolor.
+            Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Phasellus pharetra
+            neque vel fringilla dignissim.
+          </p>
+        </section>
+      </article>
+      <div className={styles.spacerSection}>
+        <div>
+          <blockquote cite="https://www.huxley.net/bnw/four.html">
+            <p>Jakaś pochlebna opinia o kandydacie, najlepiej Biedronia</p>
+          </blockquote>
+
+          <cite>– Osoba która te pochlebna opinie wyraziła</cite>
+          <img className={styles.wiosnaTick} src={wiosnaCheck} alt="Wiosna logo" />
+        </div>
+      </div>
+      <article className={styles.articleContainer}>
+        <section className={styles.halfSection}>
+          <h2>Moje priorytety</h2>
+          <ul>
+            <li>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tempor quis urna ultrices molestie.
+            </li>
+            <li>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tempor quis urna ultrices molestie.
+            </li>
+            <li>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tempor quis urna ultrices molestie.
+            </li>
+            <li>Lorem ipsum dolor sit amet.</li>
+            <li>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tempor quis urna ultrices molestie.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tempor quis urna ultrices molestie.
+            </li>
+            <li>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tempor quis urna ultrices molestie.
+            </li>
+            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+          </ul>
+        </section>
+        <section className={`${styles.halfSection} ${styles.imageSection} ${styles.prioritiesPhoto}`} />
+      </article>
+    </div>
+    <div className={styles.spacerSection}>
+      <div>
+        <blockquote cite="https://www.huxley.net/bnw/four.html">
+          <p>Jakaś pochlebna opinia o kandydacie, najlepiej Biedronia</p>
+        </blockquote>
+
+        <cite>– Osoba która te pochlebna opinie wyraziła</cite>
+        <img className={styles.wiosnaTick} src={wiosnaCheck} alt="Wiosna logo" />
+      </div>
+    </div>
+    <article className={styles.articleContainer}>
+      <section className={`${styles.halfSection} ${styles.imageSection} ${styles.candidatePhoto}`} />
+      <section className={styles.halfSection}>
+        <h2>Aktualności</h2>
+        <BlogRoll />
+        <Link to="/blog/" className={`${styles.button}`}>
+          Wszystkie aktualności
+        </Link>
+      </section>
+    </article>
   </div>
 );
 

@@ -19,6 +19,7 @@ const TemplateWrapper = ({ children }) => {
           href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css"
         />
         <script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js" />
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet" />
         <script>
           {typeof window !== `undefined` &&
             window.addEventListener("load", function() {
