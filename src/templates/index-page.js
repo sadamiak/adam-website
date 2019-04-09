@@ -116,7 +116,7 @@ export const IndexPageTemplate = ({ image, title, heading, subheading, mainpitch
       <section className={`${styles.halfSection} ${styles.imageSection} ${styles.candidatePhoto}`} />
       <section className={styles.halfSection}>
         <h2>Aktualności</h2>
-        <BlogRoll />
+        <BlogRoll count={3} />
         <Link to="/blog/" className={`${styles.button}`}>
           Wszystkie aktualności
         </Link>

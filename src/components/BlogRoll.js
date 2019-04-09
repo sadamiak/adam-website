@@ -5,7 +5,8 @@ import { Link, graphql, StaticQuery } from "gatsby";
 class BlogRoll extends React.Component {
   render() {
     const { data } = this.props;
-    const { edges: posts } = data.allMarkdownRemark;
+    let { edges: posts } = data.allMarkdownRemark;
+    if (this.props.count) posts = posts.slice(0, this.props.count);
     return (
       <div>
         {posts &&
@@ -40,31 +41,35 @@ BlogRoll.propTypes = {
   }),
 };
 
-export default () => (
-  <StaticQuery
-    query={graphql`
-      query BlogRollQuery {
-        allMarkdownRemark(
-          sort: { order: DESC, fields: [frontmatter___date] }
-          filter: { frontmatter: { templateKey: { eq: "blog-post" } } }
-        ) {
-          edges {
-            node {
-              excerpt(pruneLength: 200)
-              id
-              fields {
-                slug
-              }
-              frontmatter {
-                title
-                templateKey
-                date(formatString: "DD/MM/YYYY")
+export default class BlogRollHoc extends React.Component {
+  render() {
+    return (
+      <StaticQuery
+        query={graphql`
+          query BlogRollQuery {
+            allMarkdownRemark(
+              sort: { order: DESC, fields: [frontmatter___date] }
+              filter: { frontmatter: { templateKey: { eq: "blog-post" } } }
+            ) {
+              edges {
+                node {
+                  excerpt(pruneLength: 200)
+                  id
+                  fields {
+                    slug
+                  }
+                  frontmatter {
+                    title
+                    templateKey
+                    date(formatString: "DD/MM/YYYY")
+                  }
+                }
               }
             }
           }
-        }
-      }
-    `}
-    render={(data, count) => <BlogRoll data={data} count={count} />}
-  />
-);
+        `}
+        render={(data, count) => <BlogRoll data={data} count={this.props.count} />}
+      />
+    );
+  }
+}
