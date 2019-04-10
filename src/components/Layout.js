@@ -27,10 +27,11 @@ const TemplateWrapper = ({ children }) => {
                 window.cookieconsent.initialise({
                   palette: {
                     popup: {
-                      background: "#3937a3",
+                      background: "#49318B",
                     },
                     button: {
-                      background: "#e62576",
+                      background: "#f48120",
+                      text: "white",
                     },
                   },
                   theme: "classic",
@@ -39,8 +40,8 @@ const TemplateWrapper = ({ children }) => {
                     message:
                       "Strona wykorzystuje pliki cookies w celu prawidłowego jego działania, korzystania z wtyczek społecznościowych (Facebook, Twitter).",
                     dismiss: "Rozumiem",
-                    link: "Dowiedz się więcej",
-                    href: "jakisLink",
+                    link: "",
+                    href: "",
                   },
                 });
             })}
