@@ -25,6 +25,18 @@ const Navbar = class extends React.Component {
           }}
         >
           <h1 className="mainHeader">
+            <Link
+              to="/"
+              style={{
+                color: `white`,
+                fontWeight: `bold`,
+                textDecoration: `none`,
+                position: `relative`,
+                top: `6px`,
+              }}
+            >
+              Adam Traczyk
+            </Link>
             <svg
               className="svg-logo"
               xmlns="http://www.w3.org/2000/svg"
@@ -40,18 +52,6 @@ const Navbar = class extends React.Component {
                 />
               </g>
             </svg>
-            <Link
-              to="/"
-              style={{
-                color: `white`,
-                fontWeight: `bold`,
-                textDecoration: `none`,
-                position: `relative`,
-                top: `6px`,
-              }}
-            >
-              Adam Traczyk
-            </Link>
           </h1>
         </div>
       </header>

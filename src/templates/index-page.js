@@ -14,16 +14,14 @@ export const IndexPageTemplate = ({ image, title, heading, subheading, mainpitch
         <section className={styles.halfSection}>
           <h2>Kim jestem?</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tempor quis urna ultrices molestie. Duis
-            eu dapibus purus. Suspendisse potenti. Donec gravida felis sed lacus finibus, eu sollicitudin nunc pretium.
-            Quisque a neque et leo feugiat scelerisque. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
-            posuere cubilia Curae; Sed quis venenatis nisl.
+            Jestem Warszawiakiem od pokoleń i Europejczykiem z przekonania. Kandyduję do Parlamentu Europejskiego, bo
+            chcę w Brukseli i Strasburgu walczyć o solidarną, praworządną, ekologiczną i tolerancyjną Europę, która nie
+            zostawia nikogo z tyłu.
           </p>
           <p>
-            Aliquam egestas quam eget placerat sollicitudin. Maecenas pharetra fermentum cursus. Fusce sed rhoncus ex.
-            Sed convallis massa nibh, sollicitudin accumsan tortor condimentum porttitor. In quis condimentum dolor.
-            Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Phasellus pharetra
-            neque vel fringilla dignissim.
+            Od lat angażuję się na rzecz dialogu międzynarodowego i formułowania nowych koncepcji polskiej polityki
+            zagranicznej. Chcę wykorzystać moje wykształcenie i doświadczenie analityka polityki międzynarodowej oraz
+            działacza społecznego na rzecz Warszawy, Polski i Europy łączyć perspektywę miejską, krajową i europejską.
           </p>
           <Link to="/about/" className={`${styles.button}`}>
             Pełna biografia
@@ -34,10 +32,15 @@ export const IndexPageTemplate = ({ image, title, heading, subheading, mainpitch
       <div className={styles.spacerSection}>
         <div>
           <blockquote cite="https://www.huxley.net/bnw/four.html">
-            <p>Jakiś bardzo mądry cytat</p>
+            <p>
+              &bdquo;Ludzka godność – to wolności polityczne, prawo do swobodnego wyrażania swoich poglądów, prawo do
+              krytyki i wpływania na opinię publiczną. Ludzka godność – to prawo do zdrowia i pracy, do edukacji i
+              bezpieczeństwa. Ludzka godność – to prawo i rzeczywista możliwość do kształtowania przyszłości we
+              współpracy z innymi.&ldquo;
+            </p>
           </blockquote>
 
-          <cite>– Mądra osoba, mądre dzieło</cite>
+          <cite>– Olof Palme, były premier Szwecji</cite>
           <img className={styles.wiosnaTick} src={wiosnaCheck} alt="Wiosna logo" />
         </div>
       </div>
@@ -49,16 +52,20 @@ export const IndexPageTemplate = ({ image, title, heading, subheading, mainpitch
             <span style={{ color: "#40b36e" }}> Wiosna?</span>
           </h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tempor quis urna ultrices molestie. Duis
-            eu dapibus purus. Suspendisse potenti. Donec gravida felis sed lacus finibus, eu sollicitudin nunc pretium.
-            Quisque a neque et leo feugiat scelerisque. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
-            posuere cubilia Curae; Sed quis venenatis nisl.
+            Ponieważ chcę, żeby Polska nadawała ton Europie, a nie odwracała się od niej plecami albo tylko dryfowała z
+            nurtem. Musimy mieć większe ambicje. Chcę zmiany, bo zmiana niesie nadzieje na poprawę i zachęca do
+            formułowania odważnych i ambitnych wizji przyszłości.
           </p>
           <p>
-            Aliquam egestas quam eget placerat sollicitudin. Maecenas pharetra fermentum cursus. Fusce sed rhoncus ex.
-            Sed convallis massa nibh, sollicitudin accumsan tortor condimentum porttitor. In quis condimentum dolor.
-            Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Phasellus pharetra
-            neque vel fringilla dignissim.
+            Ponieważ mam dość polityki napędzanej strachem. Na frustracje chcę odpowiedzieć nadzieją. Populiści żerują
+            na lękach. Ja chcę budować politykę na wizji lepszego jutra. Lepszego jutra, które chcę budować dla
+            wszystkich Polek i Polaków i we współpracy z nimi. Lepszego jutra, którego chcę dla wszystkich Europejek i
+            Europejczyków, a nie tylko dla wybranych. To jest dla mnie istota demokratycznej polityki.
+          </p>
+          <p>
+            Ponieważ nie chcę powrotu do tego, co było. Chcę Europy jutra, a nie powrotu do przeszłości. Chcę Polski i
+            Europy, które idą z odwagą do przodu stawiając czoło najważniejszym wyzwaniom – nierównościom społecznym,
+            zmianom klimatu, powrotowi rywalizacji wielkich mocarstw i kryzysowi liberalnego porządku międzynarodowego.
           </p>
         </section>
       </article>
@@ -76,27 +83,16 @@ export const IndexPageTemplate = ({ image, title, heading, subheading, mainpitch
         <section className={styles.halfSection}>
           <h2>Moje priorytety</h2>
           <ul>
-            <li>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tempor quis urna ultrices molestie.
-            </li>
-            <li>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tempor quis urna ultrices molestie.
-            </li>
-            <li>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tempor quis urna ultrices molestie.
-            </li>
-            <li>Lorem ipsum dolor sit amet.</li>
-            <li>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tempor quis urna ultrices molestie.
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tempor quis urna ultrices molestie.
-            </li>
-            <li>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tempor quis urna ultrices molestie.
-            </li>
-            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+            <li>Warszawa, Polska i Europa bez smogu</li>
+            <li>Europejska Karta Kultury i Sportu</li>
+            <li>Prawo do mieszkania dla każdego</li>
+            <li>Zielona i zrównoważona transformacja</li>
+            <li>Koniec ery plastiku</li>
+            <li>Innowacje w służbie Europejek i Europejczyków</li>
+            <li>Sprawiedliwa Unia Europejska – „nie” dla rajów podatkowych</li>
           </ul>
           <Link to="/program/" className={`${styles.button}`}>
-            Cały program
+            Szczegóły programu
           </Link>
         </section>
         <section className={`${styles.halfSection} ${styles.imageSection} ${styles.prioritiesPhoto}`} />
@@ -113,7 +109,7 @@ export const IndexPageTemplate = ({ image, title, heading, subheading, mainpitch
       </div>
     </div>
     <article className={styles.articleContainer}>
-      <section className={`${styles.halfSection} ${styles.imageSection} ${styles.candidatePhoto}`} />
+      <section className={`${styles.halfSection} ${styles.imageSection} ${styles.photoWithXx}`} />
       <section className={styles.halfSection}>
         <h2>Aktualności</h2>
         <BlogRoll count={3} />

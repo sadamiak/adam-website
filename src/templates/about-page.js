@@ -4,6 +4,10 @@ import { graphql } from "gatsby";
 import Layout from "../components/Layout";
 import { HTMLContent } from "../components/Content";
 import styles from "./styles.module.css";
+import atAg from "../img/atAg.jpg";
+import atMic from "../img/atMic.jpg";
+import atBs from "../img/atBs.jpg";
+import atPolsat from "../img/atPolsat.png";
 
 export const AboutPageTemplate = ({ title, content, contentComponent }) => {
   return (
@@ -14,52 +18,73 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
           flexDirection: `column`,
         }}
       >
-        <img
-          className={styles.fullBioPhoto}
-          src="https://fundacjagloballab.files.wordpress.com/2014/08/20150520_96.png?w=400&h=600"
-          alt=""
-        />
+        <img className={styles.fullBioPhoto} src={atAg} alt="Adam Traczyk z narzeczoną" />
         <div style={{ padding: 20 }}>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer a molestie nisl, non convallis ipsum. Cras
-            quis orci ac justo aliquam vehicula. Suspendisse quis dictum quam, sed varius tellus. Maecenas quis eleifend
-            ex. Sed eget nunc eros. Aliquam bibendum eget est quis blandit. Nullam sodales nulla nibh, at vestibulum
-            arcu vestibulum quis. Quisque vitae feugiat nibh, quis ornare arcu. Praesent in dapibus sem. Aliquam
-            consectetur mi sed dui commodo imperdiet. Mauris ut massa a leo facilisis fringilla quis id augue.
-            Vestibulum vitae magna non sapien placerat elementum eget ut lorem.
+            Jestem Warszawiakiem od pokoleń i Europejczykiem z przekonania. Kandyduję do Parlamentu Europejskiego, bo
+            chcę w Brukseli i Strasburgu walczyć o solidarną, ekologiczną, różnorodną i tolerancyjną Europę, która nie
+            zostawia nikogo z tyłu.
           </p>
           <p>
-            Sed tincidunt felis ut mauris dignissim, vehicula pharetra metus eleifend. Pellentesque tempor eros nec urna
-            suscipit, nec porttitor turpis maximus. Sed pellentesque varius ante in convallis. Fusce vel dolor in elit
-            gravida sodales. Vestibulum arcu neque, consequat ac blandit vitae, molestie non ipsum. Curabitur non est
-            sed augue eleifend aliquet. Ut congue magna in nunc sollicitudin, vitae ornare ex facilisis. Ut justo ex,
-            convallis quis tellus non, efficitur tempus nisl. Praesent ut bibendum tortor.
+            Urodziłem się w 1987 roku na warszawskiej Ochocie. Mój tata, Paweł, jest ekonomistą. W czasie studiów w
+            Szkole Głównej Planowania i Statystyki (dziś Szkoła Główna Handlowa) był członkiem Niezależnego Zrzeszenia
+            Studentów. Moja mama, Małgorzata, jest dentystką. Mój młodszy brat, Łukasz, jest historykiem sztuki. Dzięki
+            nim wychowałem się w atmosferze miłości, otwartości i szacunku dla drugiego człowieka.
+          </p>
+          <p> Jestem szczęśliwym partnerem Agnieszki, prawniczki.</p>
+          <p>
+            Swoim zaangażowaniem społecznym staram się kontynuować rodzinne tradycje. Mój pradziadek Szczepan był
+            członkiem ruchu socjalistycznego i uczestnikiem Powstania Warszawskiego, po którym trafił do obozów
+            koncentracyjnych w Auschwitz i Mauthausen. Babcia Janka była aktywną działaczką pierwszej Solidarności.
+          </p>
+          <h4>Wykształcenie</h4>
+          <p>
+            Rodzice i dziadkowie zaszczepili we mnie pasję do podróżowania i chęć poznawania świata. Dlatego po maturze
+            wybrałem studia w Instytucie Stosunków Międzynarodowych Uniwersytetu Warszawskiego, W ramach stypendiów
+            zagranicznych studiowałem nauki polityczne w Bonn oraz studia latynoamerykańskie i północnoamerykańskie w
+            Berlinie.
+          </p>
+          <img className={styles.fullBioPhoto} src={atMic} alt="Adam Traczyk" />
+          <p>
+            W trakcie studiów jako członek Zarządu Samorządu Studentów UW i poseł do Parlamentu Studentów UW pracowałem
+            na rzecz promocji mobilności studenckiej. Dzięki działalności w samorządzie studenckim poznałem mnóstwo
+            fantastycznych i zaangażowanych osób oraz nauczyłem się pracy zespołowej ponad podziałami na rzecz wspólnego
+            dobra.
+          </p>
+          <h4>Doświadczenie</h4>
+          <p>
+            Po studiach chciałem łączyć pracę zawodową z działalnością społeczną, dlatego podjąłem pracę w fundacji
+            zajmującej się wspieraniem wartości socjaldemokratycznych oraz dialogu polsko-niemieckiego. Jako stypendysta
+            Międzynarodowego Stypendium Parlamentarnego Bundestagu, programu dedykowanego wyróżniającym się młodym
+            ludziom z przeszło 40 krajów świata, którzy aktywnie uczestniczą w kształtowaniu demokratycznej przyszłości
+            swoich ojczyzn, miałem okazję od środka poznać pracę parlamentu największego państwa Unii Europejskiej.
+          </p>
+          <img className={styles.fullBioPhoto} src={atBs} alt="Adam Traczyk z Berniem Sandersem" />
+          <p>
+            Jestem współzałożycielem i prezesem Fundacji Global.Lab, ośrodka analitycznego zajmującego się sprawami
+            międzynarodowymi. Obserwując polską debatę publiczną na temat polityki zagranicznej miałem wrażenie, że
+            wciąż brakuje głosu, który łączyłby przywiązanie do progresywnych wartości z realistycznym podejściem do
+            wyzwań zmieniającego się radykalnie świata. Jestem przekonany, że organizując wraz z zespołem kilkadziesiąt
+            wydarzeń i publikując dziesiątki analiz walnie przyczyniliśmy się do wypełnienia tej luki.
           </p>
           <p>
-            Aliquam faucibus velit at erat luctus ornare. Donec malesuada tristique egestas. Sed et euismod erat, eu
-            interdum massa. Morbi eget placerat orci. Fusce luctus volutpat maximus. Suspendisse tempor ipsum et metus
-            vehicula gravida. Etiam a eros ac nunc malesuada tincidunt et eu diam. Praesent viverra eleifend eros luctus
-            facilisis. Nunc volutpat gravida auctor. Suspendisse at placerat nisi, ornare mattis dolor. Fusce
-            ullamcorper, sem nec tempor aliquet, justo dolor laoreet justo, et varius ex leo sed ipsum. Vivamus sit amet
-            augue sed elit ornare luctus. Fusce nulla velit, fringilla eu nulla eu, commodo pellentesque ipsum. Integer
-            fringilla metus sit amet auctor hendrerit.
+            Zadanie to podejmowałem także jako publicysta i komentator wydarzeń międzynarodowych i polskiej polityki
+            zagranicznej. Starałem się przy tym zawsze wychodzić poza „bańkę” i nawiązywać w dialog z inaczej myślącymi.
+            Moje artykuły lub wywiady ze mną ukazywały się w prasie polskiej i zagranicznej m.in. na łamach Krytyki
+            Politycznej, Dziennika Gazety Prawnej, Rzeczpospolitej, Super Expressu, Gazeta.pl, OKO.press, Klubu
+            Jagiellońskiego, Newsweek.pl, Politico Europe, Die Welt, Der Tagesspiegel czy Aspen Review Central Europe.
+            Regularnie można mnie usłyszeć na falach Radia TOK FM.
+          </p>
+          <img className={styles.fullBioPhoto} src={atPolsat} alt="Adam Traczyk w Polsat " />
+          <p>
+            Współtworzę Akademię Demokracji Socjalnej, unikatowy program szkoleniowo-liderski dla progresywnych
+            aktywistek i aktywistów z partii politycznych, ruchów miejskich, organizacji pozarządowych i związków
+            zawodowych. W tym roku odbyła się już trzecia edycja ADS i jesteśmy w trakcie planowania kolejnej.
           </p>
           <p>
-            Pellentesque convallis vehicula diam, nec interdum dui euismod vitae. Praesent fringilla vitae quam quis
-            hendrerit. Proin hendrerit tortor arcu. Nullam sit amet condimentum libero, aliquet suscipit leo. Donec
-            faucibus sodales ex eu vehicula. Quisque condimentum, lectus ut iaculis hendrerit, neque dui porttitor est,
-            non rutrum lorem dolor at est. Ut sem quam, egestas non fringilla in, vulputate id erat. Morbi vel sem vel
-            nisi ornare elementum eget vel dolor.
-          </p>
-          <p>
-            Aliquam faucibus ornare pellentesque. Sed elementum pellentesque magna vitae pharetra. Sed lectus justo,
-            rutrum eu lectus in, tincidunt semper massa. Aenean bibendum neque id consectetur mollis. Vestibulum
-            ullamcorper justo molestie lectus semper eleifend. Nullam maximus est ex, eget sodales quam ultrices nec.
-            Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed pulvinar
-            cursus massa vulputate pretium. Vivamus et malesuada erat, ut porta magna. Aenean lobortis nisi justo, et
-            ultricies augue tincidunt vitae. Cras eu ligula congue metus facilisis porta ac eget mi. Integer pulvinar
-            arcu id lectus accumsan eleifend. Ut eget mollis felis. Proin pellentesque dapibus rutrum. Quisque sem orci,
-            auctor in velit vel, fermentum consectetur odio.
+            Jako wolontariusz pracowałem dla Helsińskiej Fundacji Praw Człowieka w projekcie dotyczącym wolności
+            zgromadzeń oraz byłem członkiem Amnesty International. Wspieram także warszawski ruch miejski Miasto Jest
+            Nasze.
           </p>
         </div>
       </article>

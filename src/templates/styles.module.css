@@ -25,14 +25,14 @@
 }
 
 .candidatePhoto {
-  background: url("https://scontent-waw1-1.xx.fbcdn.net/v/t1.0-9/53421297_406777886821713_6990789843882082304_o.jpg?_nc_cat=110&_nc_ht=scontent-waw1-1.xx&oh=5a6b9ffdf0aea90f840900bce7c533c3&oe=5D4A7EED");
+  background: url("../img/atKonw.jpg");
   background-size: cover;
   background-position: right;
   min-height: 450px;
 }
 
 .wiosnaPhoto {
-  background: url("https://scontent-waw1-1.xx.fbcdn.net/v/t1.0-9/56349181_426435944855907_7925633817098846208_n.jpg?_nc_cat=100&_nc_ht=scontent-waw1-1.xx&oh=101c5f1620642f5f34304031299f6dfa&oe=5D43649C");
+  background: url("../img/atWiosna.jpg");
   background-size: cover;
   background-position: center;
   min-height: 450px;
@@ -40,6 +40,13 @@
 
 .prioritiesPhoto {
   background: url("  https://scontent-waw1-1.xx.fbcdn.net/v/t1.0-9/54407585_411818889650946_5573755497275719680_o.jpg?_nc_cat=107&_nc_ht=scontent-waw1-1.xx&oh=d216f03eb5da787c1b3857ef3acd3736&oe=5D4C0C34");
+  background-size: cover;
+  background-position: center;
+  min-height: 450px;
+}
+
+.photoWithXx {
+  background: url("../img/atXx.jpg");
   background-size: cover;
   background-position: center;
   min-height: 450px;
@@ -101,6 +108,7 @@
 }
 
 .fullBioPhoto {
+  display: block;
   margin: 20px auto;
   height: 300px;
   max-width: 100%;
