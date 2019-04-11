@@ -18,10 +18,22 @@
 
 .imageSection {
   padding: 0;
+  position: relative;
 }
 
 .halfImage {
   margin-bottom: 0;
+}
+
+.imageSection:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(rgba(79, 45, 143, 0), rgba(79, 45, 143, 1));
 }
 
 .candidatePhoto {
@@ -55,7 +67,7 @@
 .button {
   display: inline-block;
   padding: 12px;
-  background: #4f2d8f;
+  background: rgb(244, 129, 32);
   color: white;
   text-align: center;
   font-weight: bold;
@@ -65,11 +77,16 @@
 }
 
 .button:hover {
-  background: #40b36e;
+  opacity: 0.8;
 }
 
 .spacerSection {
   background: #4f2d8f;
+  text-align: center;
+}
+
+.spacerSection blockquote p {
+  font-weight: bold;
 }
 
 .spacerSection > div {
@@ -84,10 +101,10 @@
 
 .spacerSection img {
   position: absolute;
-  bottom: 40px;
-  right: 200px;
-  height: 22px;
-  width: 24px;
+  height: 80%;
+  opacity: 0.3;
+  right: 0;
+  bottom: -8%;
   margin-bottom: 0;
 }
 
@@ -114,6 +131,58 @@
   max-width: 100%;
 }
 
+.hHighlight {
+  color: rgb(244, 129, 32);
+  display: inline-block;
+  position: relative;
+}
+
+.hHighlight:after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 24px;
+  left: -10%;
+  right: -10%;
+  bottom: -11px;
+  background-color: rgb(244, 129, 32);
+  opacity: 0.25;
+}
+
+.longTextContainer {
+  max-height: 0;
+  overflow: hidden;
+  transition: 2000ms;
+}
+
+.longtTextShow {
+  max-height: 2200px;
+}
+
+.rotateScroller90 {
+  display: inline-block;
+  position: relative;
+  left: 8px;
+  top: 2px;
+  transform: rotate(90deg);
+}
+
+.rotateScroller270 {
+  display: inline-block;
+  position: relative;
+  left: 4px;
+  top: 2px;
+  transform: rotate(270deg);
+}
+
+.plansContainer {
+  padding: 20px;
+}
+
+.plansContainer h4 {
+  cursor: pointer;
+}
+
 @media (max-width: 700px) {
   .articleContainer {
     flex-direction: column;
@@ -127,9 +196,5 @@
 
   .imageSection {
     order: 1;
-  }
-
-  .wiosnaTick {
-    display: none;
   }
 }

@@ -13,11 +13,8 @@ class BlogRoll extends React.Component {
           posts.map(({ node: post }) => (
             <div key={post.id}>
               <article>
-                <h3 className="blogpostHeader">
-                  {post.frontmatter.title}
-                  <span> &bull; </span>
-                  <span className="postDate">{post.frontmatter.date}</span>
-                </h3>
+                <span className="postDate">{post.frontmatter.date}</span>
+                <h3 className="blogpostHeader">{post.frontmatter.title}</h3>
                 <p className="postExcerpt">
                   {post.excerpt}
                   <br />

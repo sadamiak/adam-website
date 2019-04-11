@@ -12,11 +12,13 @@ export const IndexPageTemplate = ({ image, title, heading, subheading, mainpitch
     <div className={styles.mainContainer}>
       <article className={styles.articleContainer}>
         <section className={styles.halfSection}>
-          <h2>Kim jestem?</h2>
+          <h2>
+            <span className={styles.hHighlight}>Kim</span> jestem?
+          </h2>
           <p>
-            Jestem Warszawiakiem od pokoleń i Europejczykiem z przekonania. Kandyduję do Parlamentu Europejskiego, bo
-            chcę w Brukseli i Strasburgu walczyć o solidarną, praworządną, ekologiczną i tolerancyjną Europę, która nie
-            zostawia nikogo z tyłu.
+            Jestem Warszawiakiem od pokoleń i Europejczykiem z przekonania. <b>Kandyduję do Parlamentu Europejskiego</b>
+            , bo chcę w Brukseli i Strasburgu walczyć o solidarną, praworządną, ekologiczną i tolerancyjną Europę, która
+            nie zostawia nikogo z tyłu.
           </p>
           <p>
             Od lat angażuję się na rzecz dialogu międzynarodowego i formułowania nowych koncepcji polskiej polityki
@@ -45,11 +47,29 @@ export const IndexPageTemplate = ({ image, title, heading, subheading, mainpitch
         </div>
       </div>
       <article className={styles.articleContainer}>
-        <section className={`${styles.halfSection} ${styles.imageSection} ${styles.wiosnaPhoto}`} />
+        <section className={`${styles.halfSection} ${styles.imageSection} ${styles.photoWithXx}`} />
+        <section className={styles.halfSection}>
+          <h2>Aktualności</h2>
+          <BlogRoll count={3} />
+          <Link to="/blog/" className={`${styles.button}`}>
+            Wszystkie aktualności
+          </Link>
+        </section>
+      </article>
+      <div className={styles.spacerSection}>
+        <div>
+          <blockquote cite="https://www.huxley.net/bnw/four.html">
+            <p>Jakaś pochlebna opinia o kandydacie, najlepiej Biedronia</p>
+          </blockquote>
+
+          <cite>– Osoba która te pochlebna opinie wyraziła</cite>
+          <img className={styles.wiosnaTick} src={wiosnaCheck} alt="Wiosna logo" />
+        </div>
+      </div>
+      <article className={styles.articleContainer}>
         <section className={styles.halfSection}>
           <h2>
-            <span style={{ color: "#f48120" }}>Dlaczego</span>
-            <span style={{ color: "#40b36e" }}> Wiosna?</span>
+            Dlaczego <span className={styles.hHighlight}>Wiosna</span>?
           </h2>
           <p>
             Ponieważ chcę, żeby Polska nadawała ton Europie, a nie odwracała się od niej plecami albo tylko dryfowała z
@@ -68,6 +88,7 @@ export const IndexPageTemplate = ({ image, title, heading, subheading, mainpitch
             zmianom klimatu, powrotowi rywalizacji wielkich mocarstw i kryzysowi liberalnego porządku międzynarodowego.
           </p>
         </section>
+        <section className={`${styles.halfSection} ${styles.imageSection} ${styles.wiosnaPhoto}`} />
       </article>
       <div className={styles.spacerSection}>
         <div>
@@ -80,8 +101,12 @@ export const IndexPageTemplate = ({ image, title, heading, subheading, mainpitch
         </div>
       </div>
       <article className={styles.articleContainer}>
+        <section className={`${styles.halfSection} ${styles.imageSection} ${styles.prioritiesPhoto}`} />
+
         <section className={styles.halfSection}>
-          <h2>Moje priorytety</h2>
+          <h2>
+            <span className={styles.hHighlight}>Moje</span> priorytety
+          </h2>
           <ul>
             <li>Warszawa, Polska i Europa bez smogu</li>
             <li>Europejska Karta Kultury i Sportu</li>
@@ -95,29 +120,8 @@ export const IndexPageTemplate = ({ image, title, heading, subheading, mainpitch
             Szczegóły programu
           </Link>
         </section>
-        <section className={`${styles.halfSection} ${styles.imageSection} ${styles.prioritiesPhoto}`} />
       </article>
     </div>
-    <div className={styles.spacerSection}>
-      <div>
-        <blockquote cite="https://www.huxley.net/bnw/four.html">
-          <p>Jakaś pochlebna opinia o kandydacie, najlepiej Biedronia</p>
-        </blockquote>
-
-        <cite>– Osoba która te pochlebna opinie wyraziła</cite>
-        <img className={styles.wiosnaTick} src={wiosnaCheck} alt="Wiosna logo" />
-      </div>
-    </div>
-    <article className={styles.articleContainer}>
-      <section className={`${styles.halfSection} ${styles.imageSection} ${styles.photoWithXx}`} />
-      <section className={styles.halfSection}>
-        <h2>Aktualności</h2>
-        <BlogRoll count={3} />
-        <Link to="/blog/" className={`${styles.button}`}>
-          Wszystkie aktualności
-        </Link>
-      </section>
-    </article>
   </div>
 );
 
