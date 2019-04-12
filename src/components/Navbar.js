@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "gatsby";
+import at from "../img/ADAMTRACZYK.svg";
 
 const Navbar = class extends React.Component {
   constructor(props) {
@@ -35,7 +36,13 @@ const Navbar = class extends React.Component {
                 top: `6px`,
               }}
             >
-              Adam Traczyk
+              <img
+                style={{
+                  margin: `0 auto`,
+                }}
+                src={at}
+                alt="Adam Traczyk"
+              />
             </Link>
             <svg
               className="svg-logo"

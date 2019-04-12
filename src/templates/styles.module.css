@@ -16,6 +16,10 @@
   background: white;
 }
 
+.halfSection ul {
+  margin-left: 0;
+}
+
 .imageSection {
   padding: 0;
   position: relative;
@@ -41,6 +45,7 @@
   background-size: cover;
   background-position: right;
   min-height: 450px;
+  margin-right: 40px;
 }
 
 .wiosnaPhoto {
@@ -48,6 +53,7 @@
   background-size: cover;
   background-position: center;
   min-height: 450px;
+  margin-right: 40px;
 }
 
 .prioritiesPhoto {
@@ -55,6 +61,7 @@
   background-size: cover;
   background-position: center;
   min-height: 450px;
+  margin-left: 40px;
 }
 
 .photoWithXx {
@@ -62,11 +69,13 @@
   background-size: cover;
   background-position: center;
   min-height: 450px;
+  margin-left: 40px;
 }
 
 .button {
   display: inline-block;
   padding: 12px;
+  margin-top: 10px;
   background: rgb(244, 129, 32);
   color: white;
   text-align: center;
@@ -83,6 +92,10 @@
 .spacerSection {
   background: #4f2d8f;
   text-align: center;
+  font-style: italic;
+  letter-spacing: 0.3px;
+  display: flex;
+  justify-content: center;
 }
 
 .spacerSection blockquote p {
@@ -92,8 +105,8 @@
 .spacerSection > div {
   max-width: 1140px;
   width: 100%;
-  margin: auto;
-  padding: 40px;
+  margin: 0 120px;
+  padding: 60px 40px;
   font-size: 22px;
   color: white;
   position: relative;
@@ -108,6 +121,14 @@
   margin-bottom: 0;
 }
 
+.spacerSection > div::before {
+  content: url("../img/quote.svg");
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 238px;
+}
+
 .spacerSection blockquote {
   margin: 0;
 }
@@ -120,7 +141,7 @@
   content: url("../img/wiosnaCheck.svg");
   width: 24px;
   height: 24px;
-  margin-right: 5px;
+  margin-right: 20px;
   display: inline-block;
 }
 
@@ -188,6 +209,10 @@
     flex-direction: column;
   }
 
+  .spacerSection > div {
+    margin: 0 20px;
+  }
+
   .halfSection {
     width: 100%;
     order: 1;
@@ -196,5 +221,6 @@
 
   .imageSection {
     order: 2;
+    margin: 0;
   }
 }

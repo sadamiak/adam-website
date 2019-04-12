@@ -83,9 +83,10 @@ export const IndexPageTemplate = ({ image, title, heading, subheading, mainpitch
             Europejczyków, a nie tylko dla wybranych. To jest dla mnie istota demokratycznej polityki.
           </p>
           <p>
-            Ponieważ nie chcę powrotu do tego, co było. Chcę Europy jutra, a nie powrotu do przeszłości. Chcę Polski i
-            Europy, które idą z odwagą do przodu stawiając czoło najważniejszym wyzwaniom – nierównościom społecznym,
-            zmianom klimatu, powrotowi rywalizacji wielkich mocarstw i kryzysowi liberalnego porządku międzynarodowego.
+            Ponieważ nie chcę powrotu do tego, co było. Chcę Europy jutra, a nie powrotu do przeszłości.{" "}
+            <b>Chcę Polski i Europy, które idą z odwagą do przodu stawiając czoło najważniejszym wyzwaniom</b> –
+            nierównościom społecznym, zmianom klimatu, powrotowi rywalizacji wielkich mocarstw i kryzysowi liberalnego
+            porządku międzynarodowego.
           </p>
         </section>
         <section className={`${styles.halfSection} ${styles.imageSection} ${styles.wiosnaPhoto}`} />
