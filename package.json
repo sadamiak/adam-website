@@ -30,6 +30,7 @@
     "react-dom": "^16.8.4",
     "react-facebook": "^8.0.4",
     "react-helmet": "^5.2.0",
+    "react-instagram-feed": "^0.1.3-alpha",
     "react-twitter-embed": "^2.0.7",
     "uuid": "^3.2.1"
   },
