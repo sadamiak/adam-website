@@ -35,8 +35,14 @@ export class ProgramPageTemplate extends React.Component {
           }}
         >
           <div className={styles.plansContainer}>
-            <h2>Program europejski</h2>
-
+            <h2>Moje priorytety w Europie</h2>
+            <p>
+              W Brukseli i Strasburgu walczyć o solidarną, praworządną, ekologiczną i tolerancyjną Europę, która nie
+              zostawia nikogo z tyłu. Chcę Polski i Europy, które idą z odwagą do przodu stawiając czoło najważniejszym
+              wyzwaniom – nierównościom społecznym, zmianom klimatu i kryzysowi liberalnego porządku międzynarodowego.
+              Chcę Europy, która jest blisko ludzi i rozwiązuje ich problemy. Oto moje priorytety programowe, którymi
+              chciałbym się zająć w Parlamencie Europejskim.
+            </p>
             <h4 onClick={() => this.toggle("visible1")}>
               1. Warszawa, Polska i Europa bez smogu
               <span className={this.state.visible1 ? styles.rotateScroller270 : styles.rotateScroller90}>&rsaquo;</span>
@@ -224,7 +230,7 @@ export class ProgramPageTemplate extends React.Component {
                 praktykami innowacji i biznesem jest tak ważne nie tylko w kontekście badawczym, ale również
                 dydaktycznym. Unia Europejska powinna stawiać na rozwój sztucznej inteligencji, ale musi też mieć odwagę
                 ją regulować. Jako poseł do Parlamentu Europejskiego będę dbał, aby na rewolucji przemysłowej 4.0
-                skorzystają wszyscy obywatele.
+                skorzystali wszyscy obywatele.
               </p>
             </div>
             <h4 onClick={() => this.toggle("visible7")}>

@@ -37,7 +37,12 @@ const Footer = class extends React.Component {
             </div>
           </div>
           <div className="feedContainer">
-            <div>
+            <div
+              style={{
+                borderRadius: `5px`,
+                overflow: `hidden`,
+              }}
+            >
               <FacebookProvider appId="519495091756536" language={"pl_PL"}>
                 <Page
                   href="https://www.facebook.com/AdamTraczykWiosna/"

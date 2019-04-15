@@ -551,6 +551,7 @@ footer
   margin: 0
   display: flex
   justify-content: space-between
+  align-items: center
 
 .postExcerpt 
 	margin-bottom: 25px 
@@ -564,6 +565,11 @@ footer
 	font-weight: bold
 	margin-bottom: 10px
 
+.listInfo
+	font-size: 20px
+	color: white
+	text-align: center
+
 @media (max-width: 1100px) 
 	.footerContainer
 		flex-direction: column 
@@ -572,6 +578,15 @@ footer
 		.feedContainer 
 			justify-content: space-around
 			margin-top: 20px
+
+@media (max-width: 1050px) 
+  .mainHeader 
+    align-items: center
+    flex-direction: column
+  
+  .mainHeader > svg 
+    order: 2
+    margin-top: 15px
 
 @media (max-width: 650px)
 	.feedContainer
@@ -584,15 +599,6 @@ footer
 		>div:first-of-type
 			padding-right: 0
   
-@media (max-width: 550px) 
-  .mainHeader 
-    align-items: center
-    flex-direction: column
-  
-  .mainHeader > svg 
-    order: 2
-    margin-top: 15px
-
 @media (max-width: 400px)
 	.footerContainer
 		text-align: center

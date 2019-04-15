@@ -32,8 +32,6 @@ const Navbar = class extends React.Component {
                 color: `white`,
                 fontWeight: `bold`,
                 textDecoration: `none`,
-                position: `relative`,
-                top: `6px`,
               }}
             >
               <img
@@ -44,12 +42,17 @@ const Navbar = class extends React.Component {
                 alt="Adam Traczyk"
               />
             </Link>
+            <span className="listInfo">Nr 4 na liście Wiosny Roberta Biedronia w Warszawie</span>
             <svg
               className="svg-logo"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 199.6 40.4"
               width="200"
               height="41"
+              style={{
+                top: `-5px`,
+                position: `relative`,
+              }}
             >
               <path fill="#f48120" d="M192.7 0l-4.4 14.7-2.5-.1-3.5-10.1-6.5 1.9 4.4 15.2h13.6l5.8-19.4-6.9-2.2z" />
               <g className="text">

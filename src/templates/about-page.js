@@ -4,10 +4,10 @@ import { graphql } from "gatsby";
 import Layout from "../components/Layout";
 import { HTMLContent } from "../components/Content";
 import styles from "./styles.module.css";
-import atAg from "../img/atAg.jpg";
-import atMic from "../img/atMic.jpg";
+import brat from "../img/brat.jpg";
+import tok from "../img/tok.jpg";
 import atBs from "../img/atBs.jpg";
-import atPolsat from "../img/atPolsat.png";
+import atXx from "../img/atXx.jpg";
 
 export const AboutPageTemplate = ({ title, content, contentComponent }) => {
   return (
@@ -18,8 +18,12 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
           flexDirection: `column`,
         }}
       >
-        <img className={styles.fullBioPhoto} src={atAg} alt="Adam Traczyk z narzeczoną" />
-        <div style={{ padding: 20 }}>
+        <div className={styles.bioContainer}>
+          <figure className={`${styles.fullBioPhoto} ${styles.fullBioPhotoL}`}>
+            <img src={brat} alt="Adam Traczyk z bratem na wakacjach we Władysławowie" />
+            <figcaption>Z bratem na wakacjach we Władysławowie</figcaption>
+          </figure>
+          <h4>O mnie</h4>
           <p>
             Jestem Warszawiakiem od pokoleń i Europejczykiem z przekonania. Kandyduję do Parlamentu Europejskiego, bo
             chcę w Brukseli i Strasburgu walczyć o solidarną, ekologiczną, różnorodną i tolerancyjną Europę, która nie
@@ -44,7 +48,10 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
             zagranicznych studiowałem nauki polityczne w Bonn oraz studia latynoamerykańskie i północnoamerykańskie w
             Berlinie.
           </p>
-          <img className={styles.fullBioPhoto} src={atMic} alt="Adam Traczyk" />
+          <figure className={`${styles.fullBioPhoto} ${styles.fullBioPhotoR}`}>
+            <img src={tok} alt="Adam Traczyk w radiu TOK FM" />
+            <figcaption>W radiu TOK FM</figcaption>
+          </figure>
           <p>
             W trakcie studiów jako członek Zarządu Samorządu Studentów UW i poseł do Parlamentu Studentów UW pracowałem
             na rzecz promocji mobilności studenckiej. Dzięki działalności w samorządzie studenckim poznałem mnóstwo
@@ -59,7 +66,10 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
             ludziom z przeszło 40 krajów świata, którzy aktywnie uczestniczą w kształtowaniu demokratycznej przyszłości
             swoich ojczyzn, miałem okazję od środka poznać pracę parlamentu największego państwa Unii Europejskiej.
           </p>
-          <img className={styles.fullBioPhoto} src={atBs} alt="Adam Traczyk z Berniem Sandersem" />
+          <figure className={`${styles.fullBioPhoto} ${styles.fullBioPhotoL}`}>
+            <img src={atBs} alt="Adam Traczyk z senatorem Bernie Sandersem w Waszyngtonie" />
+            <figcaption>Z senatorem Bernie Sandersem w Waszyngtonie</figcaption>
+          </figure>
           <p>
             Jestem współzałożycielem i prezesem Fundacji Global.Lab, ośrodka analitycznego zajmującego się sprawami
             międzynarodowymi. Obserwując polską debatę publiczną na temat polityki zagranicznej miałem wrażenie, że
@@ -75,7 +85,10 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
             Jagiellońskiego, Newsweek.pl, Politico Europe, Die Welt, Der Tagesspiegel czy Aspen Review Central Europe.
             Regularnie można mnie usłyszeć na falach Radia TOK FM.
           </p>
-          <img className={styles.fullBioPhoto} src={atPolsat} alt="Adam Traczyk w Polsat " />
+          <figure className={`${styles.fullBioPhoto} ${styles.fullBioPhotoR}`}>
+            <img src={atXx} alt="Adam Traczyk z ministrem ds. europejskich Niemiec Michaelem Rothem" />
+            <figcaption>Z ministrem ds. europejskich Niemiec Michaelem Rothem</figcaption>
+          </figure>
           <p>
             Współtworzę Akademię Demokracji Socjalnej, unikatowy program szkoleniowo-liderski dla progresywnych
             aktywistek i aktywistów z partii politycznych, ruchów miejskich, organizacji pozarządowych i związków

@@ -107,7 +107,7 @@
   width: 100%;
   margin: 0 120px;
   padding: 60px 40px;
-  font-size: 22px;
+  font-size: 20px;
   color: white;
   position: relative;
 }
@@ -145,11 +145,32 @@
   display: inline-block;
 }
 
+.bioContainer {
+  padding: 20px;
+}
+
 .fullBioPhoto {
-  display: block;
-  margin: 20px auto;
-  height: 300px;
-  max-width: 100%;
+  margin: 0;
+}
+
+.fullBioPhoto figcaption {
+  opacity: 0.7;
+}
+
+.fullBioPhoto img {
+  max-width: 400px;
+  width: 100%;
+  margin: 0;
+}
+
+.fullBioPhotoL {
+  float: left;
+  margin-right: 20px;
+}
+
+.fullBioPhotoR {
+  float: right;
+  margin-left: 20px;
 }
 
 .hHighlight {
@@ -202,6 +223,14 @@
 
 .plansContainer h4 {
   cursor: pointer;
+}
+
+@media (max-width: 750px) {
+  .fullBioPhoto {
+    float: none;
+    margin-bottom: 20px;
+    text-align: center;
+  }
 }
 
 @media (max-width: 700px) {

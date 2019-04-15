@@ -21,9 +21,9 @@ export const IndexPageTemplate = ({ image, title, heading, subheading, mainpitch
             nie zostawia nikogo z tyłu.
           </p>
           <p>
-            Od lat angażuję się na rzecz dialogu międzynarodowego i formułowania nowych koncepcji polskiej polityki
-            zagranicznej. Chcę wykorzystać moje wykształcenie i doświadczenie analityka polityki międzynarodowej oraz
-            działacza społecznego na rzecz Warszawy, Polski i Europy łączyć perspektywę miejską, krajową i europejską.
+            Od lat angażuję się na rzecz dialogu międzynarodowego i rozwoju społeczeństwa obywatelskiego w Polsce. Chcę
+            wykorzystać moje wykształcenie i doświadczenie analityka polityki międzynarodowej oraz działacza społecznego
+            na rzecz Warszawy, Polski i Europy łączyć perspektywę miejską, krajową i europejską.
           </p>
           <Link to="/about/" className={`${styles.button}`}>
             Pełna biografia
