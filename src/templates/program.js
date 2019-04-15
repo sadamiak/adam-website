@@ -161,7 +161,7 @@ export class ProgramPageTemplate extends React.Component {
                 Plastikowe odpady trafiające do środowiska nie tylko zanieczyszczają lasy, plaże czy przestrzeń miejską,
                 ale stanowią również duże zagrożenie dla wielu gatunków zwierząt, szczególnie morskich. Co roku 8
                 milionów ton plastikowych odpadów trafia do naszych mórz i oceanów powodując śmierć dziesiątek tysięcy
-                wielorybów, fok, żółwi i ptaków, które dostają się do ich przewodu pokarmowego. Wielka Pacyficzna Plama
+                wielorybów, fok, żółwi i ptaków dostając się do ich przewodów pokarmowych. Wielka Pacyficzna Plama
                 Śmieci, składająca się w przeważającej mierze z mikrocząstek plastiku, zajmuje obecnie 1,6 miliona
                 kilometrów kwadratowych, czyli powierzchnię pięć razy większa niż obszar Polski i co roku szybko się
                 powiększa.
