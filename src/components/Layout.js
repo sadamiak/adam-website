@@ -38,7 +38,7 @@ const TemplateWrapper = ({ children }) => {
                   position: "bottom-right",
                   content: {
                     message:
-                      "Strona wykorzystuje pliki cookies w celu prawidłowego jego działania, korzystania z wtyczek społecznościowych (Facebook, Twitter).",
+                      "Strona wykorzystuje pliki cookies w celu prawidłowego jego działania, korzystania z wtyczek społecznościowych (Facebook, Twitter, Instagram).",
                     dismiss: "Rozumiem",
                     link: "",
                     href: "",
