@@ -1,5 +1,18 @@
+@font-face 
+  font-family: "Gilroy"
+  src:url("../fonts/Gilroy-Light.otf") format("opentype")
+  font-weight: 400
+  font-style: normal
+
+
+@font-face 
+  font-family: "Gilroy"
+  src:url("../fonts/Gilroy-ExtraBold.otf") format("opentype")
+  font-weight: 700
+  font-style: normal
+
 html 
-	font-family: "Lato", sans-serif
+	font-family: "Gilroy", sans-serif
 	-ms-text-size-adjust: 100% 
 	-webkit-text-size-adjust: 100% 
 	box-sizing: border-box 
@@ -225,7 +238,7 @@ h2
 	padding-right: 0 
 	padding-top: 0 
 	margin-bottom: 25px 
-	text-transform: uppercase 
+	// text-transform: uppercase 
 	color: inherit 
 	font-weight: bold 
 	text-rendering: optimizeLegibility 
@@ -390,6 +403,8 @@ blockquote
 	margin-bottom: 1.45rem 
 	*:last-child 
 		margin-bottom: 0 
+cite
+	font-style: normal
 form 
 	margin-left: 0 
 	margin-right: 0 
@@ -509,7 +524,7 @@ footer
 	h3
 		font-size: 28px
 		letter-spacing: 0.38px
-		text-transform: uppercase
+		// text-transform: uppercase
 .footerContainer 
 	display: flex
 	flex-direction: column 
@@ -573,7 +588,7 @@ footer
 .listInfo
 	font-size: 20px
 	color: white
-	text-align: center
+	// text-align: center
 
 .instagramWrapper span
 	display: none
@@ -632,13 +647,17 @@ footer
   .feedContainer > div:first-of-type 
     margin-bottom: 20px
 	.footerContainer
-		padding: 60px 20px
+		padding: 60px 40px
 		>div:first-of-type
 			padding-right: 0
+
+@media (max-width: 700px)
+	.footerContainer
+		padding: 60px 20px
   
 @media (max-width: 400px)
 	.footerContainer
-		text-align: center
+		// text-align: center
 	.footerSMContainer 
 		display: inline-block
 		span

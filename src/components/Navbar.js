@@ -34,13 +34,7 @@ const Navbar = class extends React.Component {
                 textDecoration: `none`,
               }}
             >
-              <img
-                style={{
-                  margin: `0 auto`,
-                }}
-                src={at}
-                alt="Adam Traczyk"
-              />
+              Adam Traczyk
             </Link>
             <span className="listInfo">Nr 4 na liście Wiosny Roberta Biedronia w Warszawie</span>
             <svg
