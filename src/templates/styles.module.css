@@ -131,6 +131,13 @@
 
 .spacerSection blockquote {
   margin: 0;
+  position: relative;
+  z-index: 1;
+}
+
+.spacerSection cite {
+  position: relative;
+  z-index: 1;
 }
 
 .halfSection ul {
