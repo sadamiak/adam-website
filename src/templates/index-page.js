@@ -22,8 +22,8 @@ export const IndexPageTemplate = ({ image, title, heading, subheading, mainpitch
           </p>
           <p>
             Od lat angażuję się na rzecz dialogu międzynarodowego i rozwoju społeczeństwa obywatelskiego w Polsce. Chcę
-            wykorzystać moje wykształcenie i doświadczenie analityka polityki międzynarodowej oraz działacza społecznego
-            na rzecz Warszawy, Polski i Europy łączyć perspektywę miejską, krajową i europejską.
+            wykorzystać moje wykształcenie oraz doświadczenie analityka polityki międzynarodowej i działacza społecznego
+            pracując na rzecz Warszawy, Polski i Europy łącząc perspektywę miejską, krajową i europejską.
           </p>
           <Link to="/about/" className={`${styles.button}`}>
             Pełna biografia
@@ -33,7 +33,7 @@ export const IndexPageTemplate = ({ image, title, heading, subheading, mainpitch
       </article>
       <div className={styles.spacerSection}>
         <div>
-          <blockquote cite="https://www.huxley.net/bnw/four.html">
+          <blockquote>
             <p>
               &bdquo;Ludzka godność – to wolności polityczne, prawo do swobodnego wyrażania swoich poglądów, prawo do
               krytyki i wpływania na opinię publiczną. Ludzka godność – to prawo do zdrowia i pracy, do edukacji i
@@ -47,7 +47,7 @@ export const IndexPageTemplate = ({ image, title, heading, subheading, mainpitch
         </div>
       </div>
       <article className={styles.articleContainer}>
-        <section className={`${styles.halfSection} ${styles.imageSection} ${styles.photoWithXx}`} />
+        <section className={`${styles.halfSection} ${styles.imageSection} ${styles.photoWithRB}`} />
         <section className={styles.halfSection}>
           <h2>Aktualności</h2>
           <BlogRoll count={3} />
@@ -58,11 +58,14 @@ export const IndexPageTemplate = ({ image, title, heading, subheading, mainpitch
       </article>
       <div className={styles.spacerSection}>
         <div>
-          <blockquote cite="https://www.huxley.net/bnw/four.html">
-            <p>Jakaś pochlebna opinia o kandydacie, najlepiej Biedronia</p>
+          <blockquote>
+            <p>
+              W Parlamencie Europejskim potrzebujemy takich reprezentantów jak Adam - młodych, kompetentnych, pełnych
+              świeżych pomysłów i pasji. Tacy ludzie jak on zmienią Europę na lepsze.
+            </p>
           </blockquote>
 
-          <cite>– Osoba która te pochlebna opinie wyraziła</cite>
+          <cite>– Robert Biedroń</cite>
           <img className={styles.wiosnaTick} src={wiosnaCheck} alt="Wiosna logo" />
         </div>
       </div>
@@ -73,7 +76,7 @@ export const IndexPageTemplate = ({ image, title, heading, subheading, mainpitch
           </h2>
           <p>
             Ponieważ chcę, żeby Polska nadawała ton Europie, a nie odwracała się od niej plecami albo tylko dryfowała z
-            nurtem. Musimy mieć większe ambicje. Chcę zmiany, bo zmiana niesie nadzieje na poprawę i zachęca do
+            nurtem. Musimy mieć większe ambicje. Chcę zmiany, bo zmiana niesie nadzieję na poprawę i zachęca do
             formułowania odważnych i ambitnych wizji przyszłości.
           </p>
           <p>
@@ -83,17 +86,16 @@ export const IndexPageTemplate = ({ image, title, heading, subheading, mainpitch
             Europejczyków, a nie tylko dla wybranych. To jest dla mnie istota demokratycznej polityki.
           </p>
           <p>
-            Ponieważ nie chcę powrotu do tego, co było. Chcę Europy jutra, a nie powrotu do przeszłości.{" "}
-            <b>Chcę Polski i Europy, które idą z odwagą do przodu stawiając czoło najważniejszym wyzwaniom</b> –
-            nierównościom społecznym, zmianom klimatu, powrotowi rywalizacji wielkich mocarstw i kryzysowi liberalnego
-            porządku międzynarodowego.
+            Ponieważ nie chcę powrotu do tego, co było. Chcę Europy jutra, a nie powrotu do przeszłości. Chcę Polski i
+            Europy, które idą z odwagą do przodu stawiając czoło najważniejszym wyzwaniom – nierównościom społecznym,
+            zmianom klimatu, rywalizacji wielkich mocarstw i kryzysowi liberalnego porządku międzynarodowego.
           </p>
         </section>
         <section className={`${styles.halfSection} ${styles.imageSection} ${styles.wiosnaPhoto}`} />
       </article>
       <div className={styles.spacerSection}>
         <div>
-          <blockquote cite="https://www.huxley.net/bnw/four.html">
+          <blockquote>
             <p>Jakaś pochlebna opinia o kandydacie, najlepiej Biedronia</p>
           </blockquote>
 
@@ -116,6 +118,7 @@ export const IndexPageTemplate = ({ image, title, heading, subheading, mainpitch
             <li>Koniec ery plastiku</li>
             <li>Innowacje w służbie Europejek i Europejczyków</li>
             <li>Sprawiedliwa Unia Europejska – „nie” dla rajów podatkowych</li>
+            <li>Ku Europie solidarnej i socjalnej</li>
           </ul>
           <Link to="/program/" className={`${styles.button}`}>
             Szczegóły programu

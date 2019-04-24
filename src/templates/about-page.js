@@ -23,7 +23,10 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
             <img src={brat} alt="Adam Traczyk z bratem na wakacjach we Władysławowie" />
             <figcaption>Z bratem na wakacjach we Władysławowie</figcaption>
           </figure>
-          <h4>O mnie</h4>
+          <h4>
+            O mnie
+            <span className={styles.decoLine} />
+          </h4>
           <p>
             Jestem Warszawiakiem od pokoleń i Europejczykiem z przekonania. Kandyduję do Parlamentu Europejskiego, bo
             chcę w Brukseli i Strasburgu walczyć o solidarną, ekologiczną, różnorodną i tolerancyjną Europę, która nie
@@ -41,7 +44,9 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
             członkiem ruchu socjalistycznego i uczestnikiem Powstania Warszawskiego, po którym trafił do obozów
             koncentracyjnych w Auschwitz i Mauthausen. Babcia Janka była aktywną działaczką pierwszej Solidarności.
           </p>
-          <h4>Wykształcenie</h4>
+          <h4>
+            Wykształcenie<span className={styles.decoLine} />
+          </h4>
           <p>
             Rodzice i dziadkowie zaszczepili we mnie pasję do podróżowania i chęć poznawania świata. Dlatego po maturze
             wybrałem studia w Instytucie Stosunków Międzynarodowych Uniwersytetu Warszawskiego, W ramach stypendiów
@@ -58,7 +63,9 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
             fantastycznych i zaangażowanych osób oraz nauczyłem się pracy zespołowej ponad podziałami na rzecz wspólnego
             dobra.
           </p>
-          <h4>Doświadczenie</h4>
+          <h4>
+            Doświadczenie<span className={styles.decoLine} />
+          </h4>
           <p>
             Po studiach chciałem łączyć pracę zawodową z działalnością społeczną, dlatego podjąłem pracę w fundacji
             zajmującej się wspieraniem wartości socjaldemokratycznych oraz dialogu polsko-niemieckiego. Jako stypendysta

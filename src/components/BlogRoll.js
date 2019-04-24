@@ -18,7 +18,7 @@ class BlogRoll extends React.Component {
                 <p className="postExcerpt">
                   {post.excerpt}
                   <br />
-                  <Link className="button" to={post.fields.slug}>
+                  <Link className="button readAll" to={post.fields.slug}>
                     Przeczytaj całość
                   </Link>
                 </p>

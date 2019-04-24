@@ -16,6 +16,7 @@ export class ProgramPageTemplate extends React.Component {
       visible5: false,
       visible6: false,
       visible7: false,
+      visible8: false,
     };
   }
 
@@ -37,10 +38,11 @@ export class ProgramPageTemplate extends React.Component {
           <div className={styles.plansContainer}>
             <h2>Moje priorytety w Europie</h2>
             <p>
-              W Brukseli i Strasburgu walczyć o solidarną, praworządną, ekologiczną i tolerancyjną Europę, która nie
-              zostawia nikogo z tyłu. Chcę Polski i Europy, które idą z odwagą do przodu stawiając czoło najważniejszym
-              wyzwaniom – nierównościom społecznym, zmianom klimatu i kryzysowi liberalnego porządku międzynarodowego.
-              Chcę Europy, która jest blisko ludzi i rozwiązuje ich problemy. Oto moje priorytety programowe, którymi
+              W Brukseli i Strasburgu będę walczył o solidarną, praworządną, ekologiczną i tolerancyjną Europę, która
+              nie zostawia nikogo z tyłu. Chcę Polski i Europy, które idą z odwagą do przodu stawiając czoło
+              najważniejszym wyzwaniom – nierównościom społecznym, zmianom klimatu i kryzysowi liberalnego porządku
+              międzynarodowego. Chcę Europy, która jest blisko ludzi i rozwiązuje ich problemy oraz zapewnia
+              poszanowanie praw człowieka, równości płci i praw pracowniczych. Oto moje priorytety programowe, którymi
               chciałbym się zająć w Parlamencie Europejskim.
             </p>
             <h4 onClick={() => this.toggle("visible1")}>
@@ -54,11 +56,11 @@ export class ProgramPageTemplate extends React.Component {
                 zdrowiu.
               </p>
               <p>
-                W Brukseli i Strasburgu będę zabiegał o środki na wymianę starych pieców węglowych na wymiany pieców na
-                instalacje fotowoltaiczne i pompy ciepła, wsparcie ruchu prosumenckiego, podłączanie gospodarstw
-                domowych do ciepła systemowego oraz wsparcie termomodernizacji budynków. Dziś rząd Prawa i
-                Sprawiedliwości ryzykuje utratę przyznanych już środków europejskich chcąc wymieniać kopciuchy na… inne
-                piece węglowe. Pora skończyć z tym absurdem.
+                W Brukseli i Strasburgu będę zabiegał o środki na wymianę starych pieców węglowych na instalacje
+                fotowoltaiczne i pompy ciepła, wsparcie ruchu prosumenckiego, podłączanie gospodarstw domowych do ciepła
+                systemowego oraz wsparcie termomodernizacji budynków. Dziś rząd Prawa i Sprawiedliwości ryzykuje utratę
+                przyznanych już środków europejskich chcąc wymieniać kopciuchy na… inne piece węglowe. Pora skończyć z
+                tym absurdem.
               </p>
               <p>
                 Dotychczasowe rządy zdawały się uważać, że płuca Polek i Polaków są bardziej odporne na zanieczyszczenia
@@ -68,10 +70,11 @@ export class ProgramPageTemplate extends React.Component {
               </p>
               <p>
                 W Parlamencie Europejskim będę wspierał inicjatywy wzmacniające transport publiczny, rozwój
-                elektromobilności i infrastrukturę rowerową. To szczególnie ważne dla Warszawy, gdzie powstawania smogu
-                przyczynia się duży ruch samochodowy: w naszym mieście na jednego mieszkańca przypada niemal 700
-                samochodów na 1000 mieszkańców – to prawie trzy razy więcej niż Kopenhadze czy Amsterdamie i ponad dwa
-                razy więcej niż w Berlinie!
+                elektromobilności i infrastrukturę rowerową oraz pieszą. To szczególnie ważne dla Warszawy, gdzie
+                powstawania smogu przyczynia się duży ruch samochodowy: w naszym mieście na jednego mieszkańca przypada
+                niemal 700 samochodów na 1000 mieszkańców – to prawie trzy razy więcej niż Kopenhadze czy Amsterdamie i
+                ponad dwa razy więcej niż w Berlinie! Musimy stworzyć warunki, aby rezygnacja z samochodu i przesiadka
+                na rower i transport publiczny oznaczała wzrost jakości życia.
               </p>
             </div>
             <h4 onClick={() => this.toggle("visible2")}>
@@ -81,9 +84,9 @@ export class ProgramPageTemplate extends React.Component {
             <div className={`${styles.longTextContainer} ${this.state.visible2 ? styles.longtTextShow : ""}`}>
               <p>
                 Unia Europejska musi być bliżej ludzi i ich codziennych potrzeb. Europejczycy i Europejki zasługują, aby
-                po ciężkiej pracy mieć prawo do rekreacji, aktywnego wypoczynku i pogłębiania swoich pasji niezależnie
-                od miejsca zamieszkania i zasobności portfela. Dlatego w Brukseli i Strasburgu będę walczył o
-                wprowadzenie Europejskiej Karty Kultury i Sportu.
+                po ciężkiej pracy mieć prawo do aktywnego wypoczynku i pogłębiania swoich pasji niezależnie od miejsca
+                zamieszkania i zasobności portfela. Dlatego w Brukseli i Strasburgu będę walczył o wprowadzenie
+                Europejskiej Karty Kultury i Sportu.
               </p>
               <p>
                 Dzięki niej każdy z nas będzie miał zagwarantowaną określoną kwotę w roku do wykorzystania na usługi
@@ -101,8 +104,8 @@ export class ProgramPageTemplate extends React.Component {
               <p>
                 W całej Europie 75 milionów osób mieszka w przeludnionych lokalach. W Polsce to ponad 40% społeczeństwa.
                 W Warszawie ceny kawalerek sięgają już 300 tysięcy złotych. Natomiast ceny najmu przekraczają nie tylko
-                możliwości finansowe studentów, ale i młodych pracujących. Standardem jest, że 30-kilkuletnie osoby
-                nadal często wynajmują studenckie pokoje albo mieszkają z rodzicami.
+                możliwości finansowe studentów, ale i młodych pracujących. Wiele 30-kilkuletnich osób nadal wynajmuje
+                studenckie pokoje albo mieszka z rodzicami.
               </p>
               <p>
                 W państwach europejskich w związku z kryzysem finansowym drastycznie obniżono wydatki na infrastrukturę
@@ -118,12 +121,12 @@ export class ProgramPageTemplate extends React.Component {
                 europejskiego funduszu interwencyjnego, dzięki któremu sfinansowano by najpilniejsze inwestycje.
               </p>
               <p>
-                W szczególności będę zabiegał o wsparcie projektów jak Warszawska Dzielnica Społeczna, które będą łączyć
-                dostęp do tanich mieszkań i wzmacnianie więzi społecznych. Oprócz mieszkań na każdą kieszeń i dla
-                różnych grup wiekowych priorytetowe znaczenie powinno mieć także postawienie na ruch pieszy, rowerowy i
-                transport publiczny oraz dostęp do usług na miejscu. Wspierane projekty powinny też stawiać na
-                rozwiązania przyjazne środowisku jak zielone dachy filtrujące zanieczyszczenia z powietrza i
-                przeciwdziałające występowaniu tzw. „miejskich wysp ciepła”.
+                W szczególności będę zabiegał o wsparcie i priorytetowe traktowanie projektów jak Warszawska Dzielnica
+                Społeczna, które będą łączyć dostęp do tanich mieszkań i wzmacnianie więzi społecznych. Oprócz mieszkań
+                na każdą kieszeń i dla różnych grup wiekowych priorytetowe znaczenie powinno mieć także postawienie na
+                ruch pieszy, rowerowy i transport publiczny oraz dostęp do usług na miejscu. Wspierane projekty powinny
+                też stawiać na rozwiązania przyjazne środowisku jak zielone dachy filtrujące zanieczyszczenia z
+                powietrza i przeciwdziałające występowaniu tzw. „miejskich wysp ciepła”.
               </p>
             </div>
             <h4 onClick={() => this.toggle("visible4")}>
@@ -142,8 +145,16 @@ export class ProgramPageTemplate extends React.Component {
                 Polskę i Europę. To także nowe, wysokiej jakości miejsca pracy. Jednocześnie transformacji muszą
                 towarzyszyć programy zapewniające bezpieczeństwo socjalne dla pracowników, których miejsca pracy ulegać
                 będą likwidacji bądź przekształceniu. Zielona rewolucja nie może zostać przeprowadzona na barku
-                pracowników. Odnawialne źródła energii to także niezależność i bezpieczeństwo energetyczne, zamiast
-                rosnącego importu węgla i gazu z Rosji. To jest postęp na miarę XXI wieku!
+                górników.
+              </p>
+              <p>
+                Unia Europejska powinna mieć możliwość emitowania zielonych obligacji w celu finansowania projektów z
+                związanych z energią odnawialną, efektywnością energetyczną, ochroną środowiska czy zarządzaniem
+                odpadami.
+              </p>
+              <p>
+                Odnawialne źródła energii to także niezależność i bezpieczeństwo energetyczne, zamiast rosnącego importu
+                węgla i gazu z Rosji. To jest postęp na miarę XXI wieku!
               </p>
             </div>
             <h4 onClick={() => this.toggle("visible5")}>
@@ -199,7 +210,7 @@ export class ProgramPageTemplate extends React.Component {
                 musi postawić na rozwój innowacyjnej gospodarki.
               </p>
               <p>
-                Polska nie może przespać przemian gospodarczych związanych z cyfryzacją i automatyzacją. Tymczasem
+                Polska nie może przespać przemian technologicznych związanych z cyfryzacją i automatyzacją. Tymczasem
                 znajdujemy się na szarym końcu listy państw członkowskich wykorzystujących fundusze z unijnego programu
                 Horyzont, który wspiera sektor innowacji, badań i rozwoju, a nasi naukowcy i innowatorzy ciągle uciekają
                 do zachodnich ośrodków badawczych. Zgodnie z projektem unijnego budżetu w następnych wieloletnich ramach
@@ -209,20 +220,21 @@ export class ProgramPageTemplate extends React.Component {
               <p>
                 Jako Poseł do Parlamentu Europejskiego będę zabiegał o sprawiedliwy rozdział tych środków. Z innowacji
                 powinni móc korzystać obywatele w codziennym życiu, a fundusze powinny szerszym strumieniem trafiać do
-                słabiej rozwiniętych krajów członkowskich o mniejszym własnym potencjale akademickich ośrodków
-                badawczych. Będę zabiegał o umiędzynarodowienie projektów badawczych i kierowanie środków do kluczowych
-                sektorów: zielonych technologii czy ochrony zdrowia, w tym leczenia raka. Należy też uprościć zasady
-                pozyskiwania i obsługi środków na innowacyjność – by były bardziej dostępne małym i średnim
-                przedsiębiorstwom, które często są źródłem świetnych – a niedocenianych – rozwiązań.
+                słabiej rozwiniętych krajów członkowskich o mniejszym potencjale własnych akademickich i prywatnych
+                ośrodków badawczych. Będę zabiegał o umiędzynarodowienie projektów badawczych i kierowanie środków do
+                kluczowych sektorów: zielonych technologii czy ochrony zdrowia. Należy też uprościć zasady pozyskiwania
+                i obsługi środków na innowacyjność – by były bardziej dostępne małym i średnim przedsiębiorstwom, które
+                często są źródłem świetnych – a niedocenianych – rozwiązań.
               </p>
               <p>
-                Innowacje to nie tylko technologia, ale przede wszystkim ludzie. Inwestowanie w innowacje w Europie
-                pozwoli nam nie tylko zachować konkurencyjność wobec Chin i Stanów Zjednoczonych, ale tworzyć
+                Innowacje to nie tylko technologie, ale przede wszystkim ludzie. Inwestowanie w innowacje w Europie
+                pozwoli nam nie tylko zachować konkurencyjność wobec Chin i Stanów Zjednoczonych, ale stworzyć
                 wartościowe miejsca pracy, w poszanowaniu praw pracowniczych. Strona publiczna musi dawać dobry przykład
                 w konstruowaniu przetargów na zamówienia publiczne – w ich rozstrzyganiu liczyć się powinno się nie
                 tylko kryterium ceny, ale również kryteria płacowe, długofalowe koszty i oddziaływanie na środowisko w
-                całym cyklu życia. Nie bez przyczyny w ocenie innowacyjności w programie Horizon 2020 najlepiej radzą
-                sobie kraje skandynawskie, które łączą innowacyjność i wysoki poziom bezpieczeństwa socjalnego.
+                całym cyklu trwania projektu. Nie bez przyczyny w ocenie innowacyjności w programie Horyzont 2020
+                najlepiej radzą sobie kraje skandynawskie, które łączą innowacyjność, wysoki poziom bezpieczeństwa
+                socjalnego i standardy ochrony środowiska.
               </p>
               <p>
                 Innowacyjnej gospodarki opartej na danych nie uda się osiągnąć bez infrastruktury cyfrowej i wyposażenia
@@ -250,7 +262,7 @@ export class ProgramPageTemplate extends React.Component {
                 globalne korporacje wykorzystują luki w prawie i niewystarczające regulacje na szczeblu państw
                 narodowych do unikania płacenia podatków. Dlatego potrzebujemy europejskich rozwiązań. Tylko dzięki
                 międzynarodowej współpracy możemy odzyskać znaczną część należnych obywatelom i obywatelkom Europy
-                środków. Walka z uchylaniem i unikaniem się od opodatkowania powinna stać się priorytetem wszystkich
+                środków. Walka z unikaniem i uchylaniem się od opodatkowania powinna stać się priorytetem wszystkich
                 instytucji unijnych. Sprawna Unia Europejska musi dbać o interesy uczciwych przedsiębiorców i obywateli.
               </p>
               <p>
@@ -265,11 +277,31 @@ export class ProgramPageTemplate extends React.Component {
               </p>
               <p>
                 Unia Europejska nie może być też pralnią brudnych pieniędzy. Inwestorzy spoza UE – jak na przykład
-                rosyjscy oligarchowie powiązani z Władimirem Putinem – nie mogą kryć się firmami-skrytkami pocztowymi
+                rosyjscy oligarchowie powiązani z Władimirem Putinem – nie mogą kryć się za firmami-skrytkami pocztowymi
                 ulokowanymi na Kajmanach czy innych rajach podatkowych i ukrywać prawdziwe pochodzenie swoich funduszy.
                 Na forum Parlamentu Europejskiego będę wspierał wszelkie działania mające na celu wprowadzenie klauzul
                 zwalczających uchylanie się od opodatkowania we wszystkich porozumieniach handlowych zawieranych przez
                 Unię Europejską.
+              </p>
+            </div>
+            <h4 onClick={() => this.toggle("visible8")}>
+              8. Ku Europie solidarnej i socjalnej{" "}
+              <span className={this.state.visible8 ? styles.rotateScroller270 : styles.rotateScroller90}>&rsaquo;</span>
+            </h4>
+            <div className={`${styles.longTextContainer} ${this.state.visible8 ? styles.longtTextShow : ""}`}>
+              <p>
+                Pora zapewnić wszystkim Europejkom i Europejczykom godne warunki pracy i wysoki poziom bezpieczeństwa
+                socjalnego. Będę dążył do tego, aby Europejski Filar Praw Socjalnych stał się nie tylko zbiorem
+                wytycznych, ale dokumentem wiążącym państwa członkowskie. Najwyższy czas skończyć z dumpingiem socjalnym
+                i zagwarantować polskim pracownikom równe prawa. Zasada równa płaca za tę samą pracę w tym samym miejscu
+                powinna obowiązywać w całej Unii Europejskiej. Podejmę też starania na rzecz wprowadzenia europejskiej
+                płacy minimalnej na poziomie przekraczającym 50% średniej płacy w danym kraju.
+              </p>
+              <p>
+                Pora skończyć z logiką integracji, w ramach której przeciwstawimy sobie interesy Jacques’a z Francji,
+                Sophii z Niemiec i Andrzeja z Polski. Spojrzymy na nich jako pracowników na europejskim rynku mających
+                zbieżne interesy – godne zarobki, dobre zabezpieczenia socjalne i dostęp do wysokiej jakości usług
+                publicznych. Postawmy człowieka i jego potrzeby w centrum projektu europejskiego!
               </p>
             </div>
           </div>
