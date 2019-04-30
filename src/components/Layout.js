@@ -58,7 +58,10 @@ const TemplateWrapper = ({ children }) => {
         <meta property="og:url" content="/" />
         <meta property="og:image" content="/img/at.jpg" />
         <meta name="twitter:card" content="summary" />
-        <meta property="twitter:image" content="/img/at.jpg" />
+        <meta
+          property="twitter:image"
+          content="https://confident-kepler-70cd15.netlify.com/static/atKonw-e401f2c25af51a3762d647344d1f4bad.jpg"
+        />
       </Helmet>
       <Navbar />
       <div>{children}</div>
