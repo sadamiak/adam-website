@@ -96,10 +96,10 @@ export const IndexPageTemplate = ({ image, title, heading, subheading, mainpitch
       <div className={styles.spacerSection}>
         <div>
           <blockquote>
-            <p>Jakaś pochlebna opinia o kandydacie, najlepiej Biedronia</p>
+            <p>Lorem ipsum</p>
           </blockquote>
 
-          <cite>– Osoba która te pochlebna opinie wyraziła</cite>
+          <cite>– Lorem autor</cite>
           <img className={styles.wiosnaTick} src={wiosnaCheck} alt="Wiosna logo" />
         </div>
       </div>
