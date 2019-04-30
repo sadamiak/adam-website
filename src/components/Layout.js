@@ -57,6 +57,7 @@ const TemplateWrapper = ({ children }) => {
         <meta property="og:title" content={title} />
         <meta property="og:url" content="/" />
         <meta property="og:image" content="/img/at.jpg" />
+        <meta name="twitter:card" content="summary" />
         <meta property="twitter:image" content="/img/at.jpg" />
       </Helmet>
       <Navbar />
