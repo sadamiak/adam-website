@@ -1,8 +1,8 @@
 ---
 templateKey: blog-post
 title: Rocznica powstania w getcie warszawskim
-date: 2019-05-02T23:51:56.457Z
-description: >+
+date: 2019-04-18T23:51:56.457Z
+description: >
   Powstańcy z warszawskiego getta stanęli do walki nie mając nadziei na
   zwycięstwo nad hitlerowcami. Wybrali śmierć z bronią w ręku. Piekło Holokaustu
   i II wojny światowej musi być dla nas przestrogą. Gdy nie żyje już żaden z
