@@ -71,10 +71,10 @@ export class ProgramPageTemplate extends React.Component {
               <p>
                 W Parlamencie Europejskim będę wspierał inicjatywy wzmacniające transport publiczny, rozwój
                 elektromobilności i infrastrukturę rowerową oraz pieszą. To szczególnie ważne dla Warszawy, gdzie
-                powstawania smogu przyczynia się duży ruch samochodowy: w naszym mieście na jednego mieszkańca przypada
-                niemal 700 samochodów na 1000 mieszkańców – to prawie trzy razy więcej niż Kopenhadze czy Amsterdamie i
-                ponad dwa razy więcej niż w Berlinie! Musimy stworzyć warunki, aby rezygnacja z samochodu i przesiadka
-                na rower i transport publiczny oznaczała wzrost jakości życia.
+                powstawania smogu przyczynia się duży ruch samochodowy: w naszym mieście na na 1000 mieszkańców przypada
+                niemal 700 samochodów – to prawie trzy razy więcej niż Kopenhadze czy Amsterdamie i ponad dwa razy
+                więcej niż w Berlinie! Musimy stworzyć warunki, aby rezygnacja z samochodu i przesiadka na rower i
+                transport publiczny oznaczała wzrost jakości życia.
               </p>
             </div>
             <h4 onClick={() => this.toggle("visible2")}>
@@ -254,8 +254,8 @@ export class ProgramPageTemplate extends React.Component {
                 825 000 000 000 euro. Tyle rocznie tracą państwa unijne z powodu uchylania się od opodatkowania i
                 oszustw podatkowych. To 1600 euro przypadające na każdą Europejkę i każdego Europejczyka, które można by
                 przeznaczyć na opiekę zdrowotną, wsparcie osób z niepełnosprawnościami i ich opiekunów czy szkolnictwo i
-                innowacyjne badania. Kolejne 160-190 miliardów euro tracimy z powodu unikania opodatkowania. To więcej
-                niż roczny budżet Unii Europejskiej!
+                innowacyjne badania. Tylko 160-190 miliardów euro tracimy z powodu unikania opodatkowania. To więcej niż
+                roczny budżet Unii Europejskiej!
               </p>
               <p>
                 Podczas, gdy zwykli obywatele muszą zaciskać pasa albo godzić się na niski poziom usług publicznych,

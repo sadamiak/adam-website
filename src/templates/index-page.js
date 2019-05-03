@@ -96,10 +96,10 @@ export const IndexPageTemplate = ({ image, title, heading, subheading, mainpitch
       <div className={styles.spacerSection}>
         <div>
           <blockquote>
-            <p>Lorem ipsum</p>
+            <p>Walcz o rzeczy, na których ci zależy. Ale rób to w taki sposób, aby inni do ciebie dołączyli.</p>
           </blockquote>
 
-          <cite>– Lorem autor</cite>
+          <cite>– Ruth Bader Ginsburg, sędzia Sądu Najwyższego USA</cite>
           <img className={styles.wiosnaTick} src={wiosnaCheck} alt="Wiosna logo" />
         </div>
       </div>
