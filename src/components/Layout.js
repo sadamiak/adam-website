@@ -11,6 +11,7 @@ const TemplateWrapper = ({ children }) => {
     <div>
       <Helmet>
         <html lang="en" />
+        <script>{typeof window !== `undefined` && window.location.replace("https://globallab.org.pl/")}</script>
         <title>{title}</title>
         <meta name="description" content={description} />
         <link
